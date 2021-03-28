@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container img {
+  height: 40vh;
+  pointer-events: none;
+  border-radius: 50%;
+  animation: rotate 5s ease-in-out;
+}
+
+.btc {
+  font-size: 4rem;
+  color: white;
+}
+
+.buttons {
+  margin-top: 8vh;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background: violet;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
